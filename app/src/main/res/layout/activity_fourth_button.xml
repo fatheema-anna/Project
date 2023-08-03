@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstButtonActivity">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg4"
+        tools:context=".HomeActivity">
+
+        <TextView
+            android:id="@+id/titleHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="MEDICAL SHOPS"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/titleHome"
+            android:layout_margin="10sp"
+            android:rowCount="5"
+            android:columnCount="2">
+
+            <Button
+                android:id="@+id/hosbutton"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/lavender"
+                android:textSize="18sp"
+                android:layout_margin="5sp"
+                android:text="Medicare"/>
+            <Button
+                android:id="@+id/hosbutton1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/lavender"
+                android:textSize="18sp"
+                android:layout_margin="5sp"
+                android:text="Max Medicals"/>
+            <Button
+                android:id="@+id/hosbutton2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/lavender"
+                android:textSize="18sp"
+                android:layout_margin="5sp"
+                android:text="Super Medicals"/>
+            <Button
+                android:id="@+id/hosbutton3"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/lavender"
+                android:textSize="18sp"
+                android:layout_margin="5sp"
+                android:text="Fortis Medicals"/>
+
+        </GridLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
